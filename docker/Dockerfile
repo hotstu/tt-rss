@@ -15,9 +15,11 @@ RUN rm /etc/nginx/sites-enabled/default
 
 # install ttrss and patch configuration
 WORKDIR /var/www
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y curl --no-install-recommends && rm -rf /var/lib/apt/lists/* \
-    && curl -SL https://github.com/hotstu/tt-rss/archive/master.zip | tar xzC /var/www --strip-components 1 \
-    && apt-get purge -y --auto-remove curl \
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y curl unzip --no-install-recommends && rm -rf /var/lib/apt/lists/* \
+    && curl -SL https://github.com/hotstu/tt-rss/archive/master.zip -o master.zip && unzip master.zip \
+    && mv tt-rss-master/* /var/www/ \
+    && rm -drf tt-rss-master master.zip \
+    && apt-get purge -y --auto-remove curl unzip \
     && chown www-data:www-data -R /var/www
 RUN cp config.php-dist config.php
 
