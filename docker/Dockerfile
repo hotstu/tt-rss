@@ -22,7 +22,7 @@ RUN git clone --depth 1 https://github.com/hotstu/tt-rss.git /opt/Tiny-Tiny-RSS
 WORKDIR /opt/Tiny-Tiny-RSS
 
 RUN git checkout ${TTRSS_VERSION}
-
+RUN ls
 RUN apt-get remove --purge -y git-core \
 	&& DEBIAN_FRONTEND=noninteractive apt-get autoremove --purge -y \
 	&& apt-get clean
