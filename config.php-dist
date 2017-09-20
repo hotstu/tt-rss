@@ -197,3 +197,6 @@
 	// if necessary (after migrating all new options from this file).
 
 	// vim:ft=php
+
+    define ('_CURL_HTTP_PROXY', '');
+	//add fetch from a proxy

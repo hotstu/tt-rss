@@ -7,6 +7,7 @@ $config = array();
 
 // path to ttrss
 $config['SELF_URL_PATH'] = env('SELF_URL_PATH', 'http://localhost');
+$config['_CURL_HTTP_PROXY'] = env('_CURL_HTTP_PROXY', '');
 
 if (getenv('DB_TYPE') !== false) {
     $config['DB_TYPE'] = getenv('DB_TYPE');
