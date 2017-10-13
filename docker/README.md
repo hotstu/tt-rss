@@ -1,3 +1,8 @@
+#new feature in this fork
+new env options support fetching from proxy：_CURL_HTTP_PROXY=<proxy_host>:<proxy_port>
+通过代理抓取，配置环境变量_CURL_HTTP_PROXY=<proxy_host>:<proxy_port> 
+
+
 # docker-ttrss
 
 This [Docker](https://www.docker.com) image allows you to run the [Tiny Tiny RSS](http://tt-rss.org) feed reader.
