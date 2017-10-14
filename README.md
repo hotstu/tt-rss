@@ -1,3 +1,5 @@
+增加了docker和主题，docker镜像可以使用代理抓取feed
+
 Tiny Tiny RSS
 =============
 
