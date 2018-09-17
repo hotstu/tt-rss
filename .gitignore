@@ -6,8 +6,6 @@ Thumbs.db
 *.DS_Store
 #*
 .idea/*
-plugins.local/*
-themes.local/*
 config.php
 tags
 cache/htmlpurifier/*/*ser
