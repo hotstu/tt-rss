@@ -5,7 +5,7 @@ new env options support fetching from proxy：_CURL_HTTP_PROXY=<proxy_host>:<pro
 ```bash
 _CURL_HTTP_PROXY=<proxy_host>:<proxy_port> 
 ```
-安装： 数据库使用官方PostgreSQL镜像，请无视下面的原文
+安装： 数据库使用官方PostgreSQL镜像，
 环境配置`POSTGRES_PASSWORD: docker POSTGRES_USER: docker`
 要使用ss，请使用ss-http，配置host的别名，再配置环境变量_CURL_HTTP_PROXY
 
